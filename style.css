@@ -1,75 +1,20 @@
-/* Cores do Cofre */
 :root {
-<<<<<<< HEAD
-  --destaque: #3d3f3f;
-=======
-  --destaque: #d0e22b;
->>>>>>> tema-2
-  --fundo: #0b1220;
-  --cartao: #131c2e;
-  --texto: #e6edf7;
-  --suave: #93a3bb;
+  --fundo: #0f172a;
+  --cartao: #1e293b;
+  --texto: #f8fafc;
+  --suave: #94a3b8;
+  --destaque: #3b82f6;
 }
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: var(--fundo);
-  color: var(--texto);
-  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.5;
-}
-
-header, main, footer {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 24px 20px;
-}
-
-header { padding-top: 56px; }
-
-h1 { font-size: 56px; margin: 4px 0; color: var(--destaque); }
-h2 { margin: 0 0 6px; }
-
-.etiqueta {
-  margin: 0;
-  color: var(--suave);
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  font-size: 13px;
-}
-
-.autoria { margin: 0; font-weight: 600; }
-.resumo, .explica, footer { color: var(--suave); }
-
-.ferramenta {
-  background: var(--cartao);
-  border: 1px solid #24304a;
-  border-left: 4px solid var(--destaque);
-  border-radius: 10px;
-  padding: 22px;
-  margin-bottom: 20px;
-}
-
-input, button {
-  font: inherit;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #33415f;
-}
-
-input { width: 100%; background: #0b1220; color: var(--texto); margin-bottom: 10px; }
-
-button {
-  background: var(--destaque);
-  color: #06201c;
-  border: 0;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.resultado { margin: 14px 0 0; font-weight: 600; min-height: 1.5em; }
-.ruim { color: #fb7185; }
-.bom { color: #4ade80; }
-code { font-family: Consolas, monospace; color: var(--destaque); }
+* { box-sizing: border-box; font-family: system-ui, sans-serif; }
+body { background: var(--fundo); color: var(--texto); max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+header { margin-bottom: 2rem; border-bottom: 1px solid #334155; padding-bottom: 1rem; }
+h1 { margin: 0; color: var(--destaque); }
+.cartao { background: var(--cartao); padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; border: 1px solid #334155; }
+.cartao h2 { margin-top: 0; color: var(--texto); }
+.cartao p { color: var(--suave); }
+.linha { display: flex; gap: 0.5rem; margin: 1rem 0; }
+input { flex: 1; padding: 0.6rem; border-radius: 6px; border: 1px solid #475569; background: #0f172a; color: #fff; }
+button { padding: 0.6rem 1.2rem; border-radius: 6px; border: none; background: var(--destaque); color: #fff; font-weight: bold; cursor: pointer; }
+button:hover { opacity: 0.9; }
+.saida, #resultado-gerador { font-weight: bold; color: #38bdf8; margin-top: 0.8rem; }
+footer { text-align: center; color: var(--suave); font-size: 0.9rem; margin-top: 2rem; }
